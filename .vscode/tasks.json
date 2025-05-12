@@ -4,7 +4,7 @@
 		{
 			"type": "shell",
 			"label": "bundle",
-			"command": "oj-bundle -I ${workspaceFolder}/cplib ${file} | xsel --input --clipboard",
+			"command": "oj-bundle -I ${workspaceFolder}/cplib ${file} > ${fileDirname}/bundled.cpp && code --reuse-window ${fileDirname}/bundled.cpp",
 			"problemMatcher": []
 		},
 		{
